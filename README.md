@@ -15,4 +15,19 @@ reason:
 solution:
 \ \ `https://support.microsoft.com/en-us/topic/-cannot-convert-null-to-type-error-and-exchange-2019-cu14-recoverserver-fails-2f0e1202-8253-4bfc-a9bb-d575ccfa7cef`  
 
+issue `recover exchange server`  
+solution:  
+  `https://learn.microsoft.com/zh-cn/exchange/high-availability/disaster-recovery/recover-exchange-servers?view=exchserver-2019`  
+
+Exchange2019先决条件  
+solution:  
+  `https://learn.microsoft.com/zh-cn/exchange/plan-and-deploy/prerequisites?view=exchserver-2019`  
+
+Recovering a Failed Exchange   
+solution:  
+  `https://practical365.com/recovering-a-failed-exchange-2016-database-availability-group-member/`  
+
+
+
+
 
