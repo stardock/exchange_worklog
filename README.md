@@ -31,6 +31,11 @@ iusse `Online - Data retrieval failures occurred`
 solution:  
   `https://blog.expta.com/2022/11/fix-for-online-data-retrieval-failures.html`  
 
+issue `get wmrm details`
+solution:  
+  `https://learn.microsoft.com/en-us/archive/msdn-technet-forums/49c2a79c-0bc4-4dbd-8850-1e2615351495`  
+  winrm get winrm/config
+
 
 
 
