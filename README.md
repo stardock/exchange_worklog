@@ -27,6 +27,10 @@ Recovering a Failed Exchange
 solution:  
   `https://practical365.com/recovering-a-failed-exchange-2016-database-availability-group-member/`  
 
+iusse `Online - Data retrieval failures occurred`  
+solution:  
+  `https://blog.expta.com/2022/11/fix-for-online-data-retrieval-failures.html`  
+
 
 
 
