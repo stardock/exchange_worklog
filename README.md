@@ -34,7 +34,12 @@ solution:
 issue `get wmrm details`
 solution:  
   `https://learn.microsoft.com/en-us/archive/msdn-technet-forums/49c2a79c-0bc4-4dbd-8850-1e2615351495`  
-  winrm get winrm/config
+  winrm get winrm/config  
+
+reinstall:  
+``install cluster service and enable it
+本地权限组
+虚拟内存```  
 
 
 
