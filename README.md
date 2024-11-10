@@ -37,9 +37,11 @@ solution:
   winrm get winrm/config  
 
 reinstall:  
-```install cluster service and enable it
+```
+install cluster service and enable it
 本地权限组
-虚拟内存```
+虚拟内存
+```  
 
 
 
