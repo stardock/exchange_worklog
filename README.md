@@ -48,6 +48,17 @@ https://serverfault.com/questions/675223/how-to-give-send-on-behalf-permission-o
 https://woshub.com/sendas-send-onbehalf-permissions-exchange/  
 `Set-Mailbox secretary@woshub.com -GrantSendOnBehalfTo @{Add="jsmith@woshub.com"}`  
 
+删除 运行 历史记录:  
+`control folders`  
+
+从pfx提取cert, key:  
+https://www.ibm.com/docs/en/arl/9.7?topic=certification-extracting-certificate-keys-from-pfx-file  
+`openssl pkcs12 -in [yourfile.pfx] -clcerts -nokeys -out [drlive.crt]`  
+`openssl pkcs12 -in [yourfile.pfx] -nocerts -out [drlive.key]`  
+You will be prompted to type the import password. Type the password that you used to protect your keypair when you created the .pfx file. You will be prompted again to provide a new password to protect the .key file that you are creating. Store the password to your key file in a secure place to avoid misuse.
+`openssl rsa -in [drlive.key] -out [drlive-decrypted.key]`  
+
+
 
 
 
