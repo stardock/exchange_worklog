@@ -43,6 +43,11 @@ install cluster service and enable it
 虚拟内存
 ```  
 
+如何给shared mailbox添加Grantsendonbehalf:  
+https://serverfault.com/questions/675223/how-to-give-send-on-behalf-permission-on-a-distribution-group-to-several-mailbox  
+https://woshub.com/sendas-send-onbehalf-permissions-exchange/  
+`Set-Mailbox secretary@woshub.com -GrantSendOnBehalfTo @{Add="jsmith@woshub.com"}`  
+
 
 
 
