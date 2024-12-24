@@ -58,6 +58,8 @@ https://www.ibm.com/docs/en/arl/9.7?topic=certification-extracting-certificate-k
 You will be prompted to type the import password. Type the password that you used to protect your keypair when you created the .pfx file. You will be prompted again to provide a new password to protect the .key file that you are creating. Store the password to your key file in a secure place to avoid misuse.  
 `openssl rsa -in [drlive.key] -out [drlive-decrypted.key]`  
 
+查阅sendas权限:  
+`Get-Mailbox -Identity ecn | Get-ADPermission | ? { $_.ExtendedRights -like "Send-As" } | Select-Object Identity,User,ExtendedRights`  
 
 
 
