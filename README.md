@@ -68,6 +68,22 @@ openssl 从cer文件中提取公钥
 `Get-Mailbox -Identity ecn | Get-ADPermission | ? { $_.ExtendedRights -like "Send-As" } | Select-Object Identity,User,ExtendedRights`  
 
 
-
+Mailbox Statistics report with Email addresses  
+```  
+Get-Mailbox -ResultSize Unlimited  | 
+Select-Object DisplayName, 
+SamAccountName,servername,database,
+RecipientTypeDetails,PrimarySmtpAddress,
+HiddenFromAddressListsEnabled,
+@{label="ItemCount";expression={(Get-MailboxStatistics $_).ItemCount}},
+@{label="TotalItemSize";expression={(Get-MailboxStatistics $_).TotalItemSize}},  
+@{label="DeletedItemCount";expression={(Get-MailboxStatistics $_).DeletedItemCount}},
+@{label="TotalDeletedItemSize";expression={(Get-MailboxStatistics $_).TotalDeletedItemSize}},
+@{label="MailboxGuid";expression={(Get-MailboxStatistics $_).MailboxGuid}},
+@{label="LastLogoffTime";expression={(Get-MailboxStatistics $_).LastLogoffTime}}, 
+@{label="LastLogonTime";expression={(Get-MailboxStatistics $_).LastLogonTime}},IssueWarningQuota, ProhibitSendQuota 
+ Export-Csv "Path to the output file " -NoTypeInformation
+```  
+https://sqlpowershell.wordpress.com/2016/01/07/1540/  
 
 
